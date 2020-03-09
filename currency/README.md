@@ -4,11 +4,11 @@
 
 **Table of Contents**
 
-- [🐣 Presentation of the program](#%E2%80%8D-presentation-of-the-program)
-- [🎯 How to use it](#%E2%80%8D-how-to-use-it)
+- [🐣 Presentation of the program](#presentation-of-the-program)
+- [🎯 How to use it](#how-to-use-it)
   - [Simple use](#simple-use)
   - [Complete use](#complete-use)
-  - [All Supported currencies](#%E2%80%8D-all-supported-currencies)
+  - [All Supported currencies](#all-supported-currencies)
 
 
 
@@ -18,12 +18,43 @@ This program is used to convert money between different currencies
 
 ## How to use it
 
-### Simple use
+### Commands
 
-### Complete use
+If you run the program like this with no parameters : 
+
+node cli.js
+
+The program will only print you the actual rate between bitcoin and US dollars : 
+
+1 USD = 0.0001290823919999897 BTC
+
+If you precise a quantity : 
+
+node cli.js 10
+
+It'll do the same with your quantity :
+
+10 USD = 0.001292803094453487 BTC
+
+The next step is to precise the origin currency like this : 
+
+node cli.js 10 DKK
+
+It'll convert 10 Danish Krone into bitcoins like this : 
+
+10 DKK = 0.00019848772204573357 BTC
+
+ANd our final step is to precise the arrival currency :
+
+node cli.js 10 DKK PHP
+
+And it'll convert our quantity of the origin currency to the arrival one like this : 
+
+10 DKK = 77.666510476 PHP
+
 ### All supported currencies
 
-  CAD: Canadian dollar
+  CAD: Canadian dollar \n
   HKD: Hong Kong dollar,
   ISK: Icelandic króna,
   PHP: Philipino Peso,
