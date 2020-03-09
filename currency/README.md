@@ -22,7 +22,7 @@ This program is used to convert money between different currencies
 
 If you run the program like this with no parameters : 
 
-node cli.js
+'node cli.js'
 
 The program will only print you the actual rate between bitcoin and US dollars : 
 
@@ -30,7 +30,7 @@ The program will only print you the actual rate between bitcoin and US dollars :
 
 If you precise a quantity : 
 
-node cli.js 10
+'node cli.js 10'
 
 It'll do the same with your quantity :
 
@@ -38,15 +38,15 @@ It'll do the same with your quantity :
 
 The next step is to precise the origin currency like this : 
 
-node cli.js 10 DKK
+'node cli.js 10 DKK'
 
 It'll convert 10 Danish Krone into bitcoins like this : 
 
-10 DKK = 0.00019848772204573357 BTC
+'10 DKK = 0.00019848772204573357 BTC'
 
 ANd our final step is to precise the arrival currency :
 
-node cli.js 10 DKK PHP
+'node cli.js 10 DKK PHP'
 
 And it'll convert our quantity of the origin currency to the arrival one like this : 
 
@@ -54,7 +54,7 @@ And it'll convert our quantity of the origin currency to the arrival one like th
 
 ### All supported currencies
 
-  CAD: Canadian dollar \n
+  CAD: Canadian dollar, 
   HKD: Hong Kong dollar,
   ISK: Icelandic króna,
   PHP: Philipino Peso,
