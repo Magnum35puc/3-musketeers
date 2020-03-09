@@ -26,7 +26,7 @@ If you run the program like this with no parameters :
 
 The program will only print you the actual rate between bitcoin and US dollars : 
 
-1 USD = 0.0001290823919999897 BTC
+`1 USD = 0.0001290823919999897 BTC`
 
 If you precise a quantity : 
 
@@ -34,7 +34,7 @@ If you precise a quantity :
 
 It'll do the same with your quantity :
 
-10 USD = 0.001292803094453487 BTC
+`10 USD = 0.001292803094453487 BTC`
 
 The next step is to precise the origin currency like this : 
 
@@ -42,15 +42,15 @@ The next step is to precise the origin currency like this :
 
 It'll convert 10 Danish Krone into bitcoins like this : 
 
-10 DKK = 0.00019848772204573357 BTC
+`10 DKK = 0.00019848772204573357 BTC`
 
-ANd our final step is to precise the arrival currency :
+And our final step is to precise the arrival currency :
 
 `node cli.js 10 DKK PHP`
 
 And it'll convert our quantity of the origin currency to the arrival one like this : 
 
-10 DKK = 77.666510476 PHP
+`10 DKK = 77.666510476 PHP`
 
 ### All supported currencies
 
