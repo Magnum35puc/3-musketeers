@@ -5,6 +5,8 @@ const ora = require('ora');
 
 const argv = process.argv.slice(2);
 
+
+//Fonction help (node cli.js --help)
 function help () {
   console.log(
     [
@@ -18,8 +20,9 @@ function help () {
   );
 }
 
-const spinner = ora('Fetching exchange data..');
+const spinner = ora('Fetching exchange data..'); // Ora is used to add the spinner
 
+//Fonction asynchrone. 
 async function start (opts) {
   try {
     const {amount, from, to} = opts;
