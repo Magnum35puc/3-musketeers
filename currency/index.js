@@ -29,16 +29,16 @@ module.exports = async opts => {
     const responses = await Promise.all(promises);
     const [rates] = responses;
 
-    money.base = rates.data.base;
-    console.log(money.base)
-    money.rates = rates.data.rates;
-    //console.log(money.rates)
+    money.base = rates.data.base; //The currency we are changing  
+    money.rates = rates.data.rates; //The rates from our money base to all the other currencies
+    
+    //Object with our conversion informations
     const conversionOpts = {
       from,
       to
     };
 
-    if (anyBTC) {
+    if (anyBTC) { // If bitcoin is converted you had the BTC rate to the list of rates 
       const blockchain = responses.find(response =>
         response.data.hasOwnProperty(base)
       );
@@ -48,14 +48,14 @@ module.exports = async opts => {
       });
     }
 
-    if (anyBTC) {
+    if (anyBTC) { // Always from BTC to the other currency
       Object.assign(conversionOpts, {
         'from': to,
         'to': from
       });
     }
 
-    return money.convert(amount, conversionOpts);
+    return money.convert(amount, conversionOpts); //Conversion of the amount from the "from" currency of the conversionOpts object to the "to" currency of the conversionOpts Object
   } catch (error) {
     throw new Error (
       '💵 Please specify a valid `from` and/or `to` currency value!'
